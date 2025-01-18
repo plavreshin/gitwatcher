@@ -1,0 +1,26 @@
+[package]
+name = "gitwatcher"
+version = "0.1.0"
+edition = "2021"
+authors = ["plavreshin"]
+description = "Git watcher checks the working dir for changes and suggests when it is a good time to commit. It can optionally produce increments too."
+license = "MIT"
+repository = "https://github.com/plavreshin/gitwatcher"
+documentation = "https://github.com/plavreshin/gitwatcher/README.md"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "gitwatcher"
+path = "src/main.rs"
+
+[dependencies]
+chrono = "0.4.39"
+clap = { version = "4.5.26", features = ["derive"] }
+dotenv = "0.15.0"
+env_logger = "0.11.6"
+log = "0.4.25"
+mistralai-client = "0.14.0"
+pretty_env_logger = "0.5.0"
+tokio = { version = "1.43.0", features = ["rt", "rt-multi-thread", "macros"] }
