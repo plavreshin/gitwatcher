@@ -1,4 +1,4 @@
-# arcCloud metadata tracking API
+# GitWatcher - A CLI tool for analyzing git changes with Mistral
 
 # Table of Contents
 
